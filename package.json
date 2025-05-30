@@ -1,0 +1,30 @@
+{
+  "name": "hirdyansh-react",
+  "version": "1.0.0",
+  "description": "this is namaste react of akshay saini",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Hirdy0903/hirdyansh-react"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react"
+  ],
+  "author": "Hirdyansh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist":[
+    "last 2 chrome versions"
+    
+  ]
+}
