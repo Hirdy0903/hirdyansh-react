@@ -1,22 +1,18 @@
-
-
-{/* <div id="parent">
-    <div id="child">
-        <h1>
-            
-        </h1>
-        <h2></h2>
-    </div>
-</div> */}
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent=React.createElement("div",{id:"parent"},
-    React.createElement("div",{id:"child"},
-        [React.createElement("h1",{},"namaste react"),
-            React.createElement("h1",{},"i am h2 tag")]
-    )
+const heading = React.createElement("h1", {}, "Hello World from React");
+const Title=()=>(<h1 id="heading">h1 tag using jsx </h1>);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(heading);
+//component composition
+const Headingcomponent=()=>(
+    <>
+    {Title()}
+    <Title/>
+    <Title></Title>
+    <h1> namaste react functional componnent</h1></>
 );
-const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
- 
+console.log(<Headingcomponent/>);
+
+root.render(<Headingcomponent/>)
