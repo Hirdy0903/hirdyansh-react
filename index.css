@@ -102,3 +102,40 @@
   margin-bottom: 20px;
   text-align: center;
 }
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 20px;
+}
+
+.shimmer-card {
+  height: 200px;
+  width: 200px;
+  background-color: #f0f0f0;
+  margin: 20px;
+  border-radius: 8px;
+
+}
+.button{
+  padding:0 20px;
+  cursor:pointer;
+  
+
+  
+}
+.searchbox{
+  margin: 10px;
+  padding:5 10 px;
+  cursor:pointer
+
+}
+.search-button{
+    margin: 10px;
+  padding:5 10 px;
+  
+}
+.filter{
+  display:flex;
+
+}
