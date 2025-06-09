@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "this is namaste react of akshay saini",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -23,10 +23,10 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 chrome versions"
-    
   ]
 }

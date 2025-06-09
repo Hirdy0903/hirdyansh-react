@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Header from './component/Header.';
+import Header from './component/Header.js';
 import Body from './component/Body';
+
+
+
 
 
 
@@ -62,6 +65,7 @@ const AppLayout = () => {
     </div>
   );
 };
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<AppLayout />);
