@@ -1,6 +1,6 @@
 // src/index.js (or app.js, based on your previous messages)
 
-import React from "react";
+import React ,{lazy,Suspense} from "react";
 import ReactDOM from "react-dom/client";
 // Corrected import paths: changed 'components' to 'component'
 import Header from "./component/Header.js";
@@ -10,6 +10,21 @@ import Contact from "./component/Contactus.js";
 import Error from "./component/Error.js";
 import RestaurantMenu from "./component/RestaurantMenu.js";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; // Link is used in Header.js
+import Grocery from "./component/Grocery.js";
+
+
+//chunking
+//code splitting
+//dynamic bundaling
+//lazy loding
+//on demand bundling 
+//all these are same things
+
+
+const grocery= lazy(()=> import("./component/Grocery.js"))
+
+
+
 
 //  const styleCard = {
 //   backgroundColor: '#f0f0f0',
@@ -90,6 +105,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId", // Dynamic route for restaurant menu
         element: <RestaurantMenu />,
+      },
+      
+            {
+        path: "//Grocery",
+        element: <Suspense fallback={<h1>loadinggg screeen</h1>}><Grocery /></Suspense>,
       },
     ],
     errorElement: <Error />, // Renders if no route matches
