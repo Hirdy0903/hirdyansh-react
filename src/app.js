@@ -13,6 +13,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
 import Grocery from "./component/Grocery.js";
 
 
+
 //chunking
 //code splitting
 //dynamic bundaling
